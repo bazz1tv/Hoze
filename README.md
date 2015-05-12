@@ -1,4 +1,7 @@
 # Wiki-Markup to BBCode Converter
+
+Wiki Markup, also known as wikitext or wikicode, to bbcode converter.
+
 ## considered volatile
 
 it's only been worked on for a matter of hours.
