@@ -2,6 +2,10 @@ tmpfile=`mktemp /tmp/XXXXXX`
 
 echo "using $tmpfile"
 cp $1 $tmpfile
+
+# some wikimarkup documents have paragraphs seperated by lines with just spaces
+# these spaces need to be removed so that perl's paragraph feature can be used -00
+perl -i.original -pe 's/^\h+$//' $tmpfile
 ### '''Bold''' or '''Bold 
 ## Must run these 2 in the order provided
 # most correct syntax
