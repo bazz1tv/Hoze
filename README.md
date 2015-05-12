@@ -10,6 +10,14 @@ it's only been worked on for a matter of hours.
 
 Perl and Sed (OSX 10.10.3's SED works fine). I use perl from macports.
 
+### How to Use
+
+On the wiki, edit the page to access the wiki markup, copy and paste it into a local file. then from a shell,
+
+	$ ./wiki_markup_to_bbcode.sh wm.txt
+
+The output is now in your clipboard for pasting
+
 ### Current Support
 
 Bold text 
@@ -24,3 +32,4 @@ Links -- HTTP(S), internal and external
 
 Images
 
+Support to handle input from pbpaste

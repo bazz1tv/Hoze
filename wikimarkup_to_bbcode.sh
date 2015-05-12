@@ -68,4 +68,4 @@ perl -i.original -pe 's#^\*(.*)$#\[\*\]\1#gi' $tmpfile
 # end
 #perl -000 -pe 's#^\*(.*)#\[list\]\n\[\*\]\1\[/\*\]#gis'
 
-subl $tmpfile
+cat $tmpfile | pbcopy
